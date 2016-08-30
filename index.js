@@ -2,7 +2,9 @@ require('./models');
 const db = require('./db');
 const app = require('./app');
 
-require('dotenv').config();
+if (process.env.NODE_ENV==="development") {
+	require('dotenv').config();
+}
 
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.DB_URI;
