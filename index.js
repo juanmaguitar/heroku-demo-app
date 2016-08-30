@@ -3,7 +3,7 @@ const db = require('./db');
 const app = require('./app');
 
 if (process.env.NODE_ENV==="development") {
-	require('dotenv').config();
+  require('dotenv').config();
 }
 
 const PORT = process.env.PORT || 3000;
